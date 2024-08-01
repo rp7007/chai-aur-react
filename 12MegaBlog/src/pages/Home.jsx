@@ -33,7 +33,7 @@ function Home() {
         <Container>
             <div>
                 {posts.map((post) => (
-                    <div>
+                    <div key={post.$id} className='p-2 w-1/4'>
                         <PostCard {...post} />
                     </div>
                 ))}
